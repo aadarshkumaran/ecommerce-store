@@ -22,6 +22,6 @@ export const getProducts = async(query : Query) : Promise<Product[]> =>{
         },
     });
 
-    const res = await fetch(URL);
+    const res = await fetch(url);
     return res.json();
 }
