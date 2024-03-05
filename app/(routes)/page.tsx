@@ -15,7 +15,7 @@ export default async function Home() {
                 <Billboard
                     data={billboard}
                 />
-                <div className="flex flex-col gap-y-8 sm:px-6 lg:px-8">
+                <div className="flex px-4 flex-col gap-y-8 sm:px-6 lg:px-8">
                     <ProductList title="Featured Products" items={products} />
                 </div>
             </div>
