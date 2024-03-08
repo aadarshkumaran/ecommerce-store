@@ -16,11 +16,11 @@ const Summary = () => {
     const removeAll = useCart((state) => state.removeAll)
 
     useEffect(()=>{
-        if(searchParams.get('Success')){
+        if(searchParams.get('success')){
             toast.success('Payment Completed.')
             removeAll()
         }
-        if(searchParams.get('Cancelled')){
+        if(searchParams.get('cancelled')){
             toast.error('Something Went Wrong.')
         }
     },[searchParams,removeAll])
